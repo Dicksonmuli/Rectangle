@@ -1,21 +1,13 @@
-import java.io.Console;
+import java.util.Map;
+import java.util.HashMap;
+import spark.ModelAndView;
+import spark.template.velocity.VelocityTemplateEngine;
+import static spark.Spark.*;
 
 public class App {
-	public static void main(String[] args) {
-		Console myConsole = System.console();
-		System.out.println("Enter the length of your rectangle:");
-		String stringLength = myConsole.readLine();
-	 int intLength = Integer.parseInt(stringLength);
-	 System.out.println("Enter the width of your rectangle:");
-    String stringWidth = myConsole.readLine();
-    int intWidth = Integer.parseInt(stringWidth);
+  public static void main(String[] args) {
+    staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
 
-		// instance of a Rectangle
-		Rectangle rectangle = new Rectangle(intLength, intWidth);
-
-		boolean squareResult = rectangle.isSquare();
-		int area = rectangle.getArea();
-		System.out.println("Area: " + area );
-		System.out.println("Is the rectangle a quare, too?" + squareResult + "!!");
-	}
+  }
 }
