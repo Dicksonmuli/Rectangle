@@ -11,7 +11,7 @@ public class RectangleTest {
 	}
 
 	@Test
-	public void newRectangle_getsLenght_2() {
+	public void newRectangle_getsLength_2() {
 		Rectangle testRectangle = new Rectangle(2, 4);
 		assertEquals(2, testRectangle.getLength());
 	}
@@ -41,4 +41,10 @@ public class RectangleTest {
 	 assertTrue(Rectangle.all().contains(firstRectange));
 	 assertTrue(Rectangle.all().contains(secondRectange));
  }
+
+ @Test
+public void area_returnsTheAreaOfTheRectangle_450() {
+  Rectangle testRectangle = new Rectangle(15, 30);
+  assertEquals(450, testRectangle.getArea());
+}
 }
