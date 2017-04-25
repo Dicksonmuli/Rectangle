@@ -1,10 +1,15 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class Rectangle {
 	private int mLength;
 	private int mWidth;
+	private static List<Rectangle> instances = new ArrayList<Rectangle>();
 
 	public Rectangle(int length, int width) {
 		mLength = length;
 		mWidth = width;
+
 	}
 	public int getLength() {
 		return mLength;

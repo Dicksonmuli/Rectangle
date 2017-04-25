@@ -32,4 +32,12 @@ public class RectangleTest {
 	 Rectangle testRectangle = new Rectangle(2,2);
 	 assertEquals(true, testRectangle.isSquare());
  }
+// testing static methods
+ @Test
+ public void all_returnsAllInstancesOfRectangle_true() {
+	 Rectangle firstRectange = new Rectangle(10, 20);
+	 Rectangle secondRectange = new Rectangle(10, 20);
+	 assertTrue(Rectangle.all().contains(firstRectange));
+	 assertTrue(Rectangle.all().contains(secondRectange));
+ }
 }

@@ -15,7 +15,7 @@ public class App {
 
 		boolean squareResult = rectangle.isSquare();
 		int area = rectangle.getArea();
-		System.out.println("Area: " + area + );
+		System.out.println("Area: " + area );
 		System.out.println("Is the rectangle a quare, too?" + squareResult + "!!");
 	}
 }
