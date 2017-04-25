@@ -1,3 +1,4 @@
+import java.util.*;
 import org.junit.*;
 import static org.junit.Assert.*;
 
@@ -36,7 +37,7 @@ public class RectangleTest {
  @Test
  public void all_returnsAllInstancesOfRectangle_true() {
 	 Rectangle firstRectange = new Rectangle(10, 20);
-	 Rectangle secondRectange = new Rectangle(10, 20);
+	 Rectangle secondRectange = new Rectangle(5, 5);
 	 assertTrue(Rectangle.all().contains(firstRectange));
 	 assertTrue(Rectangle.all().contains(secondRectange));
  }
